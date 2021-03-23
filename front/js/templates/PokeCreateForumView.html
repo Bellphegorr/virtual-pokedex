@@ -1,0 +1,25 @@
+<h1 class="text-center">Publicação de Fórum</h1>
+
+<div class="container-center m-3">
+    <input ng-model="vm.title" class="poke-input" type="text" placeholder="Digite o título do fórum">
+</div>
+
+<div class="container-center">
+    <ng-quill-editor ng-model="vm.content" class=" bg-white" 
+    on-editor-created="vm.editorCreated(editor)" style="width: 50%;" 
+    modules="vm.editorModules" themes="vm.themes">
+    </ng-quill-editor>
+</div>
+
+<div class="container-center">
+    <p ng-show="vm.invalidTitle" class="danger-alert m-3">
+        Digite um título para o fórum.
+    </p>
+    <p ng-show="vm.invalidContent" class="danger-alert m-3">
+        Digite Conteúdo para o fórum
+    </p>
+</div>
+
+<div class="container-center m-3">
+    <button class="poke-button" ng-click="vm.publishForum()">Publicar</button>
+</div>

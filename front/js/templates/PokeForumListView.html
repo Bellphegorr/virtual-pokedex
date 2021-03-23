@@ -1,0 +1,24 @@
+<links-container></links-container>
+<div class="container-center align-items-center column">
+    <h1 class="display-1">Fórum Pokémon</h1>
+    <small>Fórum sobre dúvidas e competitivo</small>
+
+    <div class="m-3" ng-if="vm.showCreateForumButton">
+        <button class="poke-button" ng-click="vm.go()">Criar Fórum</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card" ng-repeat="forum in vm.forumList">
+        <img class="card-pin-img" src="../../images/pokeball.png" alt="">
+        <div class="card-body">
+            <h3>{{forum.title | uppercase}}</h3>
+            <b>Autor: </b> {{forum.authorName}}
+            <div>
+                <a ng-href="#!/forum/{{forum._id}}">
+                    <button>Ler mais</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

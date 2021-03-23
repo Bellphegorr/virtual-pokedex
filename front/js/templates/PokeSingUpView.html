@@ -1,0 +1,18 @@
+<links-container></links-container>
+
+<div class="container-center align-items-center">
+    <div class="gray-content container-center  align-items-center">
+        <img class="m-3" src="../../images/pokeball.png" alt="" width="100px">
+
+        <input type="text" class="poke-input m-3" ng-model="vm.email" placeholder="Email">
+        <input type="password" class="poke-input m-3" ng-model="vm.password" placeholder="Senha">
+        <input type="text" class="poke-input m-3" ng-model="vm.name" placeholder="Nome de Usuário">
+        <button class="poke-button" ng-click="vm.singUp()">Cadastrar</button>
+        
+        <span ng-if="vm.invalidAuth">
+            <p class="danger-alert">
+               {{vm.invalidMssg}}
+            </p>
+        </span>
+    </div>    
+</div>

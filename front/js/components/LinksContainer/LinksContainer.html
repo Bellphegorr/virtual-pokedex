@@ -1,0 +1,8 @@
+<div class="links-container">
+    <a class="m-3" href="/"><img class="ml-3 icon" src="./images/pokeball.png"> Pokédex</a>
+    <a class="m-3" href="#!/forum"><img class="icon" src="./images/pokeball.png"> Fórum</a>
+    <a class="m-3" ng-if="$ctrl.showLoginLink" href="#!/login"><img class="icon" src="./images/pokeball.png"> Login</a>
+    <a class="m-3" ng-if="$ctrl.showSingupLink" href="#!/cadastro"><img class="icon" src="./images/pokeball.png"> Cadastro</a>
+    <a class="m-3" ng-if="!($ctrl.showLoginLink || $ctrl.showSingupLink)" href="" ng-click="$ctrl.logout()"><img class="icon" src="./images/pokeball.png"> Logout</a>
+    <a class="m-3" ng-if="!($ctrl.showLoginLink || $ctrl.showSingupLink)"> <span class="text-red"> {{$ctrl.name}}</span></a>
+</div>

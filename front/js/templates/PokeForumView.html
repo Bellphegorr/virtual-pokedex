@@ -1,0 +1,14 @@
+<links-container></links-container>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h1>{{vm.forum.title | uppercase}}</h1>
+            <b>{{vm.forum.authorName}}</b>
+        
+            <p>
+                <span ng-bind-html="vm.forum.content"></span>
+            </p>
+        </div>
+    </div>
+</div>

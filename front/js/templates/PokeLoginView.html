@@ -1,0 +1,17 @@
+<links-container></links-container>
+<div class="container-center">
+    <div class="gray-content container-center">
+        <img src="../../images/pokeball.png" alt="" width="100px">
+
+        <input type="text" class="poke-input m-3" ng-model="vm.email" placeholder="Email">
+        <input type="password" class="poke-input m-3" ng-model="vm.password" placeholder="Senha">
+
+        <button class="poke-button" ng-click="vm.login()">Entrar</button>
+        
+        <span ng-if="vm.invalidAuth">
+            <p class="danger-alert">
+                Email ou senha inválidos.
+            </p>
+        </span>
+    </div>    
+</div>

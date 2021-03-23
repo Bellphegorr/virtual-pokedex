@@ -1,0 +1,233 @@
+.pokeball-back {
+    position : fixed;
+    top      : 50%;
+    left     : -50%;
+    transform: translateY(-50%);
+    z-index  : -100;
+    width    : 100%;
+    opacity  : 0.5;
+}
+
+#pokeFilter {
+    position                  : fixed;
+    top                       : 0;
+    left                      : 0;
+    z-index                   : 5;
+    padding                   : 10px;
+    border                    : 0;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+    background-color          : #666;
+    color                     : #fff;
+}
+
+#pokeFilter:focus {
+    outline: none;
+}
+
+.poke-input {
+    padding         : 10px;
+    border          : 0;
+    border-radius   : 20px;
+    background-color: #666;
+    color           : #fff;
+    font-size       : 1.2rem;
+}
+
+.poke-input:focus {
+    outline: none;
+}
+
+.poke-list {
+    float         : right;
+    margin-top    : 50px;
+    width         : 70%;
+    text-transform: capitalize;
+    opacity       : 0.95;
+}
+
+.poke-list-item {
+    display                  : flex;
+    align-items              : center;
+    position                 : relative;
+    padding                  : 10px;
+    border                   : 1px solid black;
+    border-top-left-radius   : 20px;
+    border-bottom-left-radius: 20px;
+    cursor                   : pointer;
+    list-style               : none;
+    background-color         : #333;
+    color                    : white;
+}
+
+a {
+    color          : white;
+    text-decoration: none;
+}
+
+.poke-list-item:hover {
+    background-color: #555;
+}
+
+.poke-list-item img {
+    margin-right  : 10px;
+    vertical-align: middle;
+}
+
+.back-button {
+    display         : inline-block;
+    position        : fixed;
+    top             : 10px;
+    right           : 10px;
+    width           : 20px;
+    height          : 20px;
+    text-align      : center;
+    text-decoration : none;
+    font-weight     : bold;
+    border-radius   : 20px;
+    background-color: #333;
+    color           : white;
+}
+
+.poke-profile {
+    text-align: center;
+}
+
+.poke-types {
+    text-align     : center;
+    list-style-type: none;
+    padding        : 0;
+    margin         : 0;
+}
+
+.poke-types li {
+    display: inline-block;
+    margin : 2px;
+}
+
+table {
+    border-collapse : collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin          : 50px auto 0 auto;
+}
+
+td {
+    border : 1px solid;
+    padding: 5px;
+}
+
+.container-center {
+    display        : flex;
+    justify-content: center;
+}
+
+.gray-content {
+    background-color: rgba(196, 196, 196, 0.6);
+    border-radius   : 10px;
+    width           : 330px;
+    min-height      : 425px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-direction  : column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.m-3 {
+    margin: 1.5rem;
+}
+
+.m-2 {
+    margin: 1.2rem;
+}
+
+.poke-button {
+    background-color: #666666;
+    padding         : 15px;
+    border-radius   : 5px;
+    font-size       : 1.3rem;
+    color           : white;
+    margin          : 5px;
+}
+
+.danger-alert {
+    color           : white;
+    background-color: #dc3545 !important;
+    padding         : 10px;
+    border-radius   : 3px;
+}
+
+.display-1 {
+    font-size: 2.5rem;
+}
+
+.container {
+    margin-left : 8.5rem;
+    margin-right: 8.5rem;
+}
+
+.card-pin-img {
+    width   : 4.1rem;
+    position: relative;
+    top     : 50px;
+    left    : -20px;
+}
+
+.card-body {
+    background-color: rgba(51, 51, 51, 0.5);
+    padding         : 35px;
+    border-radius   : 5px;
+    margin-top      : 10px;
+}
+
+.card-body button {
+    background-color: rgba(51, 51, 51, .7);
+    box-sizing      : border-box;
+    padding         : 10px;
+    margin-top      : 10px;
+    color           : white;
+    border-radius   : 5px;
+}
+
+.links-container {
+    margin-left: auto;
+    font-size  : 1.2rem;
+    text-align : end;
+}
+
+.links-container a {
+    color: black !important;
+}
+
+a img.icon {
+    width   : 1.1rem;
+    position: relative;
+    top     : 3px;
+}
+
+.ml-3 {
+    margin-left: 5px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* [ng-quill-editor] {
+    display: block;
+} */
+
+.text-center {
+    text-align: center;
+}
+
+.text-red {
+    color: rgba(255, 0, 0, 0.6) !important;
+}
